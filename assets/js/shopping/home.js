@@ -127,6 +127,12 @@ $('#products-container').on('click', '.product-price', function() {
     Cart.set(id, cartItem);
     calTotalPrice();
     refreshCart();
+
+    var el = $(this);
+    el.addClass('pulse-animation');
+    newone = el.clone(true);
+    el.before(newone);
+    $(this).remove();
 })
 
 function newCartItem(item, id) {
