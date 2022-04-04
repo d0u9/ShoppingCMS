@@ -75,10 +75,11 @@ function createProdHTML(post) {
     const price = parseFloat(post.feature_image_caption);
     const productPrice = $('<div></div>').addClass('product-price').html(price.toFixed(2));
     const productHeader = $('<div></div>').addClass('product-header').attr(prodIdKey, post.id).append(productName).append(productPrice);
+    var desc;
     if (post.excerpt === "") {
-        const desc = $('<div></div>').addClass('product-desc').html(post.html);
+        desc = $('<div></div>').addClass('product-desc').html(post.html);
     } else {
-        const desc = $('<div></div>').addClass('product-desc').html(post.excerpt);
+        desc = $('<div></div>').addClass('product-desc').html(post.excerpt);
     }
     const detail = $('<div></div>').addClass('product-detail').append(productHeader).append(desc);
 
