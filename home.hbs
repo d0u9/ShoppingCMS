@@ -371,6 +371,13 @@
 </script>
 <script src="{{asset "built/casper.js"}}"></script>
 <script src="https://unpkg.com/@tryghost/content-api@1.7.2/umd/content-api.min.js"></script>
+<script>
+    const api = new GhostContentAPI({
+        url: '{{@site.url}}',
+        key: 'add2c152247b62692a08d768f5',
+        version: "v4"
+    });
+</script>
 <script src="{{asset "js/shopping/home.js"}}"></script>
 
 {{!-- Ghost outputs required functional scripts with this tag - it should always be the last thing before the closing body tag --}}

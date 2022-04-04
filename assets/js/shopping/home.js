@@ -1,9 +1,3 @@
-const api = new GhostContentAPI({
-  url: 'http://ali.htest.d0u9.top:7864',
-  key: 'add2c152247b62692a08d768f5',
-  version: "v4"
-});
-
 const catIdKey = 'cat-id';
 const prodIdKey = 'prod-id';
 const HideTagSet = new Set(['News']);
