@@ -89,6 +89,9 @@
         },
         "card_assets": true,
         "custom": {
+            "content_api_key": {
+                "type": "text"
+            },
             "title_font": {
                 "type": "select",
                 "options": [
