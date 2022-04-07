@@ -1,12 +1,20 @@
+html {
+    height: 100%;
+}
+
+.home-template {
+    height: 100%;
+}
+
 .viewport {
     display: flex;
-    flex-wrap: wrap;
-    height: 90vh;
+    flex-flow: row nowrap;
+    height: 100%;
+    min-height: auto;
 }
 
 .category-container {
     width: 20vw;
-    height: 100vh;
     border-right-width: thin;
     border-right-color: #cccccc;
     border-right-style: solid;
@@ -38,7 +46,6 @@
 
 .products-container {
     width: 80vw;
-    height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
